@@ -38,6 +38,81 @@ class _HomeScreenState extends State<HomeScreen> {
         compassEnabled: false,
         myLocationEnabled: true,
         myLocationButtonEnabled: true,
+        markers: {
+          Marker(
+              markerId: MarkerId("Initial Position"),
+            position: LatLng(23.427580326810077, 88.82347522459632),
+            infoWindow: InfoWindow(
+              title: "This is my marker",
+              snippet: "This is my snippet"
+            ),
+            draggable: true,
+            onDrag: (LatLng position){
+              print(position);
+            },
+            onDragEnd: (LatLng position){
+              print(position);
+            },
+            onDragStart: (LatLng position){
+              print(position);
+            },
+
+
+          ),
+          Marker(
+            markerId: MarkerId("Initial Position"),
+            position: LatLng(23.42868011524524, 88.82574263960123),
+            infoWindow: InfoWindow(
+                title: "This is my marker",
+                snippet: "This is my snippet"
+            ),
+            draggable: true,
+            onDrag: (LatLng position){
+              print(position);
+            },
+            onDragEnd: (LatLng position){
+              print(position);
+            },
+            onDragStart: (LatLng position){
+              print(position);
+            },
+
+
+          ),
+          Marker(
+            markerId: MarkerId("Initial Position"),
+            position: LatLng(23.430099840959297, 88.82391337305307),
+            infoWindow: InfoWindow(
+                title: "This is my marker",
+                snippet: "This is my snippet"
+            ),
+            draggable: true,
+            onDrag: (LatLng position){
+              print(position);
+            },
+            onDragEnd: (LatLng position){
+              print(position);
+            },
+            onDragStart: (LatLng position){
+              print(position);
+            },
+
+
+          )
+        },
+        polylines: {
+          Polyline(
+              polylineId: PolylineId("This is polyline"),
+            color: Colors.red,
+            width: 6,
+            points: [
+              LatLng(23.427580326810077, 88.82347522459632),
+              LatLng(23.42868011524524, 88.82574263960123),
+              LatLng(23.430099840959297, 88.82391337305307),
+              LatLng(23.427580326810077, 88.82347522459632),
+            ]
+          )
+        },
 
       ),
 
