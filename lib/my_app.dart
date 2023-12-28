@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_map_ostad/home_screen.dart';
+import 'package:google_map_ostad/location.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -8,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: LocationScreen(),
     );
   }
 }
